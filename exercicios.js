@@ -39,6 +39,8 @@ console.log(comidasFav[3])
 console.log(comidasFav[4])
 let comidaFavUsuario = prompt("Digite sua comida favorita")
 comidasFav[1] = comidaFavUsuario
+console.log("Comidas favoritas com a do usuário: ") 
+console.log(comidasFav)
 
 // Exercício 5 
 let listaDeTarefas = [] 
@@ -46,7 +48,11 @@ let tarefaUm = prompt("Digite sua primeira tarefa do dia")
 let tarefaDois = prompt("Digite sua segunda tarefa do dia")
 let tarefaTres = prompt("Digite sua terceira tarefa do dia")
 listaDeTarefas.push(tarefaUm, tarefaDois, tarefaTres)
+console.log("Lista de tarefas: ") 
 console.log(listaDeTarefas)
-let excluirTarefa = prompt("Qual tarefa foi concluída?")
-console.log(listaDeTarefas.splice[excluirTarefa, 1])
+
+let excluirTarefa = Number(prompt("Qual tarefa foi concluída?"))
+listaDeTarefas.splice(excluirTarefa, 1)
+console.log("Lista de tarefas atualizada: ") 
+console.log(listaDeTarefas)
 
